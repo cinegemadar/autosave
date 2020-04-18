@@ -10,7 +10,7 @@ def autosave(path):
         cmd.add(".")
         cmd.commit(message=f"{datetime.now()} autosave")
         cmd.push()
-        print(f"[OK] {datetime.now()} saved {path} ")
+        print(f"[ OK    ] {datetime.now()} saved {path} ")
 
 
 if __name__ == "__main__":
@@ -19,5 +19,6 @@ if __name__ == "__main__":
     try:
         for path in data["folders"]:
             autosave(path)
-    except:
-        print("fatal: not a git repository (or any of the parent directories)")
+    except Exception as e:
+        print("[ ERROR ]fatal: not a git repository (or any of the parent directories)")
+        print(f"[ ERROR ]\t {e}")
