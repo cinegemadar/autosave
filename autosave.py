@@ -9,5 +9,5 @@ if filesToBeSaved:
     cmd.add(".")
     # timestamp =  datetime.fromtimestamp(datetime.timestamp(datetime.now()))
     timestamp =  datetime.now()
-    cmd.commit(message=f"{timestamp} autosave")
+    cmd.commit(message=f"{datetime.now()} autosave")
     cmd.push()
