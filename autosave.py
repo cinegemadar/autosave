@@ -7,6 +7,6 @@ res = cmd.status(porcelain=True)
 filesToBeSaved = len(res.split(linesep)) > 0
 if filesToBeSaved:
     cmd.add(".")
-    now = datetime.now()
-    cmd.commit(message="{datetime.timestamp.now()} autosave")
+    timestamp =  datetime.timestamp(datetime.now())
+    cmd.commit(message="{timestamp} autosave")
     cmd.push()
