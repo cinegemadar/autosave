@@ -14,8 +14,8 @@ def autosave(path):
 if __name__ == "__main__":
     with open("autosave.json") as jsonFile:
         data = json.load(jsonFile)
-    # try:
-    for path in data["folders"]:
-        autosave(path)
-    # except:
-    #     print("fatal: not a git repository (or any of the parent directories)")
+    try:
+        for path in data["folders"]:
+            autosave(path)
+    except:
+        print("fatal: not a git repository (or any of the parent directories)")
