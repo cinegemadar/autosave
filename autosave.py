@@ -20,5 +20,5 @@ if __name__ == "__main__":
         for path in data["folders"]:
             autosave(path)
     except Exception as e:
-        print("[ ERROR ]fatal: not a git repository (or any of the parent directories)")
-        print(f"[ ERROR ]\t {e}")
+        print(f"[ ERROR ] {datetime.now()} something went wrong.")
+        print("{e}")
