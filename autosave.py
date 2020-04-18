@@ -4,6 +4,7 @@ from datetime import datetime
 import json
 
 def autosave(path):
+    ''' add docu '''
     cmd = git.cmd.Git(path)
     if cmd.status(porcelain=True):
         cmd.add(".")
