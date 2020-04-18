@@ -21,4 +21,4 @@ if __name__ == "__main__":
             autosave(path)
     except Exception as e:
         print(f"[ ERROR ] {datetime.now()} something went wrong.")
-        print("{e}")
+        print(e)
