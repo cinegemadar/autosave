@@ -17,6 +17,7 @@ if __name__ == "__main__":
     with open("autosave.json") as jsonFile:
         data = json.load(jsonFile)
     try:
+        print(f"[OK] {datetime.now()} start processing... ")
         for path in data["folders"]:
             autosave(path)
     except:
