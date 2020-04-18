@@ -8,5 +8,5 @@ filesToBeSaved = len(res.split(linesep)) > 0
 if filesToBeSaved:
     cmd.add(".")
     timestamp =  datetime.timestamp(datetime.now())
-    cmd.commit(message="{timestamp} autosave")
+    cmd.commit(message=f"{timestamp} autosave")
     cmd.push()
