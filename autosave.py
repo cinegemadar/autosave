@@ -10,7 +10,7 @@ def autosave(path):
         cmd.add(".")
         cmd.commit(message=f"{datetime.now()} autosave")
         cmd.push()
-        print(f"[OK] {datetime.now()} saved {path}")
+        print(f"[OK] {datetime.now()} saved {path} ")
 
 
 if __name__ == "__main__":
