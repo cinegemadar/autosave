@@ -12,5 +12,5 @@ This tool automatically adds, commits and pushes changed files to your repositor
 
 ## Docs
 
-* [Set-up autosave](./docs/setup.md)
+* [Set-up autosave](./doc/setup.md)
 
