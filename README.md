@@ -6,6 +6,7 @@ This tool automatically adds, commits and pushes changed files to your repositor
 
 ## Prerequisites
 
-- python 3.6+ installed
-- GIT repository set up for the folder to be *autosaved*
+- python 3.6+ installed [see]()
+- GIT repository set up for the folder to be *autosaved* [see]()
 - Credentials are saved for pushing to remote [see]()
+
