@@ -3,8 +3,9 @@ from os import linesep
 from datetime import datetime
 import json
 
+
 def autosave(path):
-    ''' Add changed files, commit, push '''
+    """ Add changed files, commit, push """
     cmd = git.cmd.Git(path)
     if cmd.status(porcelain=True):
         cmd.add(".")
